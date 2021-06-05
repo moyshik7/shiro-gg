@@ -36,3 +36,7 @@ export interface ApiResult {
      */
     fileType: string;
 }
+
+export interface ReportInputOptions {
+    nsfw ?: boolean;
+}

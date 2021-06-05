@@ -1,6 +1,6 @@
 //Types
 import { AxiosResponse } from 'axios'
-import { ApiResult, ImageResult } from './../typings'
+import { ApiResult, ImageResult, ReportInputOptions } from './../typings'
 
 //Modules
 import axios from 'axios'
@@ -8,20 +8,37 @@ import axios from 'axios'
 //The base url
 const BaseURL = 'https://shiro.gg/api/'
 
-const GetImage = async (__endpoint: string): Promise < ImageResult > => {
+const GetImage = async (__endpoint: string, __options?: ReportInputOptions): Promise < ImageResult > => {
     return new Promise((resolve: any, reject: any) => {
         if (!__endpoint.length) {
             //In case empty string is provided
-            const __argerr = new Error('Invalid arguments provided for Api Endpoints')
-            __argerr.name = 'ArgumentError'
-            reject(__argerr)
+            const __argErr = new Error('Invalid arguments provided for Api Endpoints')
+            __argErr.name = 'ArgumentError'
+            reject(__argErr)
+        }
+        if(!__options){
+            /**
+             * If no options is provided we'll think it's sfw request
+             */
+            __options = {
+                nsfw: false
+            }
+        }
+        let _requestURL: string;
+        if(__options.nsfw){
+            _requestURL = `${BaseURL}images/nsfw/${__endpoint}`
+        } else {
+            _requestURL = `${BaseURL}images/${__endpoint}`
         }
         /**
          * URL endpoint format:
          * SFW: https://shiro.gg/api/images/:enpoint
          * NSFW: https://shiro.gg/api/images/nsfw/:endpoint
          */
-        axios.get(`${BaseURL}images/${__endpoint}`).then((_res: AxiosResponse <ApiResult>): void => {
+        axios.get(_requestURL).then((_res: AxiosResponse<ApiResult>): void => {
+            /**
+             * If okay / success
+             */
             if (_res.data.code == 200) {
                 const result: ImageResult = {
                     url: _res.data.url,
@@ -36,12 +53,10 @@ const GetImage = async (__endpoint: string): Promise < ImageResult > => {
 }
 
 export { GetImage }
-
-/*
-ToDo:
-- Add support for nsfw
-- Add new imput type options
-- {
-    nsfw?: boolean;
-}
-*/
+/**
+ * Test:
+ * SFW:
+ * GetImage('pat').then(console.log)
+ * NSFW:
+ * GetImage('hentai', { nsfw: true }).then(console.log)
+ */
