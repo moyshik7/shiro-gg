@@ -21,7 +21,10 @@ npm i shiro.gg
 **Import with CommonJS `require()`:**  
 
 ```js
+// Import the whole module
 const shiro = require("shiro.gg");
+// Or, Just some functions
+const { Hug } = require("shiro.gg");
 ```
 
 **Import with EcmaScript / TypeScript `import`:**  
