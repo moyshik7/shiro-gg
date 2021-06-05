@@ -1,0 +1,19 @@
+{
+  "name": "shiro.gg",
+  "version": "0.0.1",
+  "description": "An api wrapper for shiro.gg",
+  "main": "./comp/main.js",
+  "scripts": {
+    "start": "tsc && node .",
+    "test": "tsc-node ."
+  },
+  "keywords": [
+    "api",
+    "shiro",
+    "image",
+    "shiro.gg",
+    "api-wrapper"
+  ],
+  "author": "moyshik7",
+  "license": "MIT"
+}
