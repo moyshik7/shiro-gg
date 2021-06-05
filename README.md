@@ -78,18 +78,18 @@ ImageResult {
   
 ### SFW
   
-| Name | Description |
-| :---- | :---------- |
-| Avatar | Get a random avatar | 
-| Avatars  | Same as Avatar |
-Blush  
-Cry  
-Hug  
-Kiss  
-Lick  
-Neko  
-Nom  
-Pat  
+| Name      | Description                          |
+| :-------- | :----------------------------------- |
+| Avatar    | Get a random avatar                  | 
+| Avatars   | Same as Avatar                       |
+| Blush     | Get a random image / gif of blushing |
+| Cry       | Get a random image / gif of crying   | 
+| Hug       | Get a random image / gif of hugging  |
+| Kiss      | Get a random image / gif of kissing  |
+| Lick      | Get a random image / gif of licking  |
+| Neko      | Get a random image of a catgirl      |
+| Nom       | Get a random image / gif of eating   |
+| Pat       | Get a random image / gif of patting  |
 Poke  
 Pout  
 Punch  
