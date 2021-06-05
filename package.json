@@ -1,13 +1,13 @@
 {
     "name": "shiro.gg",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "An api wrapper for shiro.gg",
     "main": "./comp/main.js",
     "types": "./comp/typings.ts",
     "scripts": {
-        "check-docs": "simplehttpserver ./",
-        "docs": "rm -f -r docs && typedoc src/main.ts --out ./docs/",
-        "start": "tsc && node .",
+		"build": "npm ci && tsc",
+        "build-docs": "rm -f -r ./docs && typedoc src/main.ts --out ./docs/",
+        "start": "tsc",
         "test": "tsc-node ."
     },
     "keywords": [
@@ -39,5 +39,5 @@
     "bugs": {
         "url": "https://github.com/moyshik7/shiro.gg/issues"
     },
-    "homepage": "https://github.com/moyshik7/shiro.gg#readme"
+    "homepage": "https://moyshik7.github.io/shiro.gg/"
 }

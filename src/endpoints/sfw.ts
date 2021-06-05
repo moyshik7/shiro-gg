@@ -85,94 +85,241 @@ const Hug = async (): Promise<ImageResult> => {
     return GetImage('hug', { nsfw: false })
 }
 /**
- * get an image / gif of kissing 
+ * Get a gif of kissing
+ * 
+ * @returns {Promise} A kissing gif 
+ * @example
+ * ```js
+ * Kiss().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Kiss = async (): Promise<ImageResult> => {
     return GetImage('kiss', { nsfw: false })
 }
 /**
- * get an image / gif of licking
+ * Get a gif of licking
+ * 
+ * @returns {Promise} A licking gif 
+ * @example
+ * ```js
+ * Lick().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Lick = async (): Promise<ImageResult> => {
     return GetImage('lick', { nsfw: false })
 }
 /**
- * get an image / gif of a catgirl 
+ * Get an image of neko / catgirl
+ * 
+ * @returns {Promise} An image of catgirl
+ * @example
+ * ```js
+ * Neko().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Neko = async (): Promise<ImageResult> => {
     return GetImage('neko', { nsfw: false })
 }
 /**
- * get an image / gif of eating
- * nom: the sound of eating
+ * Get a gif of eating
+ * 
+ * @returns {Promise} An eating gif 
+ * @example
+ * ```js
+ * Nom().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Nom = async (): Promise<ImageResult> => {
     return GetImage('nom', { nsfw: false })
 }
 /**
- * get an image / gif of patting 
+ * Get a gif of patting
+ * 
+ * @returns {Promise} A patting gif 
+ * @example
+ * ```js
+ * Pat().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Pat = async (): Promise<ImageResult> => {
     return GetImage('pat', { nsfw: false })
 }
 /**
- * get an image / gif of poking
+ * Get a gif of poking
+ * 
+ * @returns {Promise} A poking gif 
+ * @example
+ * ```js
+ * Poke().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Poke = async (): Promise<ImageResult> => {
     return GetImage('poke', { nsfw: false })
 }
 /**
- * get an image / gif of pouting 
+ * Get a gif of pouting
+ * 
+ * @returns {Promise} A pouting gif 
+ * @example
+ * ```js
+ * Pout().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Pout = async (): Promise<ImageResult> => {
     return GetImage('pout', { nsfw: false })
 }
 /**
- * get an image / gif of punching 
+ * Get a gif of punching
+ * 
+ * @returns {Promise} A punching gif 
+ * @example
+ * ```js
+ * Punch().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Punch = async (): Promise<ImageResult> => {
     return GetImage('punch', { nsfw: false })
 }
 /**
- * get an image / gif of slapping
+ * Get a gif of slapping
+ * 
+ * @returns {Promise} A slapping gif 
+ * @example
+ * ```js
+ * Slap().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Slap = async (): Promise<ImageResult> => {
     return GetImage('slap', { nsfw: false })
 }
 /**
- * get a random image of sleeping
+ * Get a gif of sleeping
+ * 
+ * @returns {Promise} A sleeping gif
+ * @example
+ * ```js
+ * Sleep().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Sleep = async (): Promise<ImageResult> => {
     return GetImage('sleep', { nsfw: false })
 }
 /**
- * get a random image of Smugging
- * smug: Facial expression
+ * Get a gif of smugging
+ * 
+ * @returns {Promise} A smug image 
+ * @example
+ * ```js
+ * Smug().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Smug = async (): Promise<ImageResult> => {
     return GetImage('smug', { nsfw: false })
 }
 /**
- * get a random image / gif of tickling
+ * Get a gif of tickling
+ * 
+ * @returns {Promise} A tickling gif 
+ * @example
+ * ```js
+ * Tickle().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Tickle = async (): Promise<ImageResult> => {
     return GetImage('tickle', { nsfw: false })
 }
 /**
- * get a random image of Trap
- * trap: Boy dressed as girl
+ * Get a random image of a trap (Bot dressed as girl)
+ * 
+ * @returns {Promise} An image of a trap
+ * @example
+ * ```js
+ * Trap().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Trap = async (): Promise<ImageResult> => {
     return GetImage('trap', { nsfw: false })
 }
 /**
- * get a random Wallpaper
+ * Get a random wallpaper
+ * 
+ * @returns {Promise} A wallpaper
+ * @example
+ * ```js
+ * Wallpaper().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Wallpaper = async (): Promise<ImageResult> => {
     return GetImage('wallpapers', { nsfw: false })
 }
 /**
- * get a random wallpaper
+ * Get a random wallpaper
+ * 
+ * @returns {Promise} A wallpaper
+ * @example
+ * ```js
+ * Wallpapers().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Wallpapers = async (): Promise<ImageResult> => {
     return GetImage('wallpapers', { nsfw: false })
