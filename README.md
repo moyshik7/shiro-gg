@@ -1,11 +1,10 @@
 # Shiro.gg
-![GitHub top language](https://img.shields.io/github/languages/top/moyshik7/shiro.gg)
-![npm bundle size](https://img.shields.io/bundlephobia/min/shiro.gg)
-![Maintenance](https://img.shields.io/maintenance/yes/2021)
-  
-![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/moyshik7/shiro.gg)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/moyshik7/shiro.gg/main)
-![npm](https://img.shields.io/npm/v/shiro.gg)
+![GitHub top language](https://img.shields.io/github/languages/top/moyshik7/shiro.gg)  
+![npm bundle size](https://img.shields.io/bundlephobia/min/shiro.gg)  
+![Maintenance](https://img.shields.io/maintenance/yes/2021)  
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/moyshik7/shiro.gg)  
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/moyshik7/shiro.gg/main)  
+![npm](https://img.shields.io/npm/v/shiro.gg)  
   
   
 Unofficial API wrapper for [https://shiro.gg/api](shiro.gg)  
@@ -103,14 +102,17 @@ ImageResult {
   
 ### NSFW
   
-BDSM  
-Bondage  
-Hentai  
-Thigh  
-Thighs  
+| Name       | Description                                 |
+| :--------- | :------------------------------------------ |
+| BDSM       | Get image of BDSM                           |
+| Bondage    | Get a random Bondage (subset of BDSM) image |
+| Hentai     | Get a random Hentai image                   |
+| Thigh      | Get a random thigh image                    |
+| Thighs     | Same as thigh                               |
   
   
   
 ### Other info
   
 [GitHub repo](https://github.com/moyshik7/shiro.gg)  
+[Shiro Api](https://shiro.gg/api)  
