@@ -9,7 +9,7 @@ import axios from 'axios'
 const BaseURL = 'https://shiro.gg/api/'
 
 const GetImage = async (__endpoint: string, __options?: ReportInputOptions): Promise < ImageResult > => {
-    return new Promise((resolve: any, reject: any) => {
+    return new Promise((resolve: (value: ImageResult) => void, reject) => {
         if (!__endpoint.length) {
             //In case empty string is provided
             const __argErr = new Error('Invalid arguments provided for Api Endpoints')
@@ -46,7 +46,7 @@ const GetImage = async (__endpoint: string, __options?: ReportInputOptions): Pro
                 }
                 resolve(result);
             }
-        }).catch((_err: any) => {
+        }).catch((_err: any) => { // eslint-disable-line @typescript-eslint/no-explicit-any
             reject(_err)
         })
     });
