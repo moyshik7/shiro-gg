@@ -1,4 +1,13 @@
 # Shiro.gg
+![GitHub top language](https://img.shields.io/github/languages/top/moyshik7/shiro.gg)
+![npm bundle size](https://img.shields.io/bundlephobia/min/shiro.gg)
+![Maintenance](https://img.shields.io/maintenance/yes/2021)
+  
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/moyshik7/shiro.gg)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/moyshik7/shiro.gg/main)
+![npm](https://img.shields.io/npm/v/shiro.gg)
+  
+  
 Unofficial API wrapper for [https://shiro.gg/api](shiro.gg)  
   
 ## Installation
@@ -40,7 +49,7 @@ const res = await Hug()
 console.log(res)
 ```
 
-**A basic example using `.then()`  
+**A basic example using `.then()`:**  
 
 ```js
 Hug().then( (res) => {
@@ -99,4 +108,4 @@ Thighs
   
 ### Other info
   
-[https://github.com/moyshik7/shiro.gg](GitHub repo)  
+[GitHub repo](https://github.com/moyshik7/shiro.gg)  
