@@ -26,5 +26,13 @@
   },
   "dependencies": {
     "axios": "^0.21.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moyshik7/shiro.gg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moyshik7/shiro.gg/issues"
+  },
+  "homepage": "https://github.com/moyshik7/shiro.gg#readme"
 }
