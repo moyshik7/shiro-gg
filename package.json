@@ -1,6 +1,6 @@
 {
   "name": "shiro.gg",
-  "version": "0.0.1",
+  "version": "0.1.2",
   "description": "An api wrapper for shiro.gg",
   "main": "./comp/main.js",
   "scripts": {

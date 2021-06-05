@@ -37,10 +37,19 @@ const Thighs = async (): Promise<ImageResult> => {
 }
 
 // Export all Modules
+// PascalCase
 export {
     BDSM,
     Bondage,
     Hentai,
     Thigh,
     Thighs
+}
+// camelCase
+export {
+    BDSM as bdsm,
+    Bondage as bondage,
+    Hentai as hentai,
+    Thigh as thigh,
+    Thighs as thighs
 }

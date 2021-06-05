@@ -130,6 +130,7 @@ const Wallpapers = async (): Promise<ImageResult> => {
 
 
 // Exporting all modules
+// PascalCase
 export {
     Avatar,
     Avatars,
@@ -151,4 +152,27 @@ export {
     Trap,
     Wallpaper,
     Wallpapers
+}
+// camelCase
+export {
+    Avatar as avatar,
+    Avatars as avatars,
+    Blush as blush,
+    Cry as cry,
+    Hug as hug,
+    Kiss as kiss,
+    Lick as lick,
+    Neko as neko,
+    Nom as nom,
+    Pat as pat,
+    Poke as poke,
+    Pout as pout,
+    Punch as punch,
+    Slap as slap,
+    Sleep as sleep,
+    Smug as smug,
+    Tickle as tickle,
+    Trap as trap,
+    Wallpaper as wallpaper,
+    Wallpapers as wallpapers
 }
