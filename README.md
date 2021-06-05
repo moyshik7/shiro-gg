@@ -78,8 +78,10 @@ ImageResult {
   
 ### SFW
   
-Avatar  
-Avatars  
+| Name | Description |
+| :---- | :---------- |
+| Avatar | Get a random avatar | 
+| Avatars  | Same as Avatar |
 Blush  
 Cry  
 Hug  
