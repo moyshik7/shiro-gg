@@ -115,4 +115,5 @@ ImageResult {
 ### Other info
   
 [GitHub repo](https://github.com/moyshik7/shiro.gg)  
+[NPM module](https://www.npmjs.com/package/shiro.gg)  
 [Shiro Api](https://shiro.gg/api)  

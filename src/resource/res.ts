@@ -8,6 +8,10 @@ import axios from 'axios'
 //The base url
 const BaseURL = 'https://shiro.gg/api/'
 
+/**
+ * gets image from the api
+ * @private
+ */
 const GetImage = async (__endpoint: string, __options?: ReportInputOptions): Promise < ImageResult > => {
     return new Promise((resolve: (value: ImageResult) => void, reject) => {
         if (!__endpoint.length) {

@@ -1,38 +1,43 @@
 {
-  "name": "shiro.gg",
-  "version": "0.1.5",
-  "description": "An api wrapper for shiro.gg",
-  "main": "./comp/main.js",
-  "types": "./comp/typings.ts",
-  "scripts": {
-    "start": "tsc && node .",
-    "test": "tsc-node ."
-  },
-  "keywords": [
-    "api",
-    "shiro",
-    "image",
-    "shiro.gg",
-    "api-wrapper"
-  ],
-  "author": "moyshik7",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^15.12.1",
-    "@typescript-eslint/eslint-plugin": "^4.26.0",
-    "@typescript-eslint/parser": "^4.26.0",
-    "eslint": "^7.28.0",
-    "typescript": "^4.3.2"
-  },
-  "dependencies": {
-    "axios": "^0.21.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/moyshik7/shiro.gg.git"
-  },
-  "bugs": {
-    "url": "https://github.com/moyshik7/shiro.gg/issues"
-  },
-  "homepage": "https://github.com/moyshik7/shiro.gg#readme"
+    "name": "shiro.gg",
+    "version": "0.1.5",
+    "description": "An api wrapper for shiro.gg",
+    "main": "./comp/main.js",
+    "types": "./comp/typings.ts",
+    "scripts": {
+        "check-docs": "simplehttpserver ./",
+        "docs": "rm -f -r docs && typedoc src/main.ts --out ./docs/",
+        "start": "tsc && node .",
+        "test": "tsc-node ."
+    },
+    "keywords": [
+        "api",
+        "shiro",
+        "image",
+        "shiro.gg",
+        "api-wrapper",
+        "image-api"
+    ],
+    "author": "moyshik7",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^15.12.1",
+        "@typescript-eslint/eslint-plugin": "^4.26.0",
+        "@typescript-eslint/parser": "^4.26.0",
+        "eslint": "^7.28.0",
+        "jsdoc-to-markdown": "^7.0.1",
+        "typedoc": "^0.20.36",
+        "typescript": "^4.3.2"
+    },
+    "dependencies": {
+        "axios": "^0.21.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/moyshik7/shiro.gg.git"
+    },
+    "bugs": {
+        "url": "https://github.com/moyshik7/shiro.gg/issues"
+    },
+    "homepage": "https://github.com/moyshik7/shiro.gg#readme"
 }

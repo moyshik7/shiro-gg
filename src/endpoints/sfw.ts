@@ -5,31 +5,81 @@ import { ImageResult } from './../typings'
 import { GetImage } from './../resource/res'
 
 /**
- * get a random avatar
+ * Get a random avatar
+ * 
+ * @returns {Promise} An avatar image 
+ * @example
+ * ```js 
+ * Avatar().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Avatar = async (): Promise<ImageResult> => {
     return GetImage('avatars', { nsfw: false })
 }
 /**
- * get a random avatar 
+ * Get a random avatar 
+ * 
+ * @returns {Promise} An avatar image 
+ * @example
+ * ```js 
+ * Avatars().then(res => { 
+ *     console.log(res)
+ * })
+ * ```
+ * 
+ * @public
  */
 const Avatars = async (): Promise<ImageResult> => {
     return GetImage('avatars', { nsfw: false })
 }
 /**
- * get an image / gif of blushing 
+ * Get an image / gif of blushing 
+ * 
+ * @returns {Promise} A blushing image or gif 
+ * @example
+ * ```js
+ * Blush().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Blush = async (): Promise<ImageResult> => {
     return GetImage('blush', { nsfw: false })
 }
 /**
- * get an image / gif of crying 
+ * get an image / gif of crying
+ * 
+ * @returns {Promise} A crying gif 
+ * @example
+ * ```js
+ * Cry().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Cry = async (): Promise<ImageResult> => {
     return GetImage('cry', { nsfw: false })
 }
 /**
- * get an image / gif of hugging 
+ * Get a gif of hugging
+ * 
+ * @returns {Promise} A hugging image / gif 
+ * @example
+ * ```js
+ * Hug().then(res => { 
+ *     console.log(res) 
+ * })
+ * ```
+ *
+ * @public
  */
 const Hug = async (): Promise<ImageResult> => {
     return GetImage('hug', { nsfw: false })
@@ -154,25 +204,88 @@ export {
     Wallpapers
 }
 // camelCase
+/**
+ * @hidden
+ */
 export {
+    /**
+     * @hidden 
+     */
     Avatar as avatar,
+    /**
+     * @hidden 
+     */
     Avatars as avatars,
+    /**
+     * @hidden 
+     */
     Blush as blush,
+    /**
+     * @hidden 
+     */
     Cry as cry,
+    /**
+     * @hidden 
+     */
     Hug as hug,
+    /**
+     * @hidden 
+     */
     Kiss as kiss,
+    /**
+     * @hidden 
+     */
     Lick as lick,
+    /**
+     * @hidden 
+     */
     Neko as neko,
+    /**
+     * @hidden 
+     */
     Nom as nom,
+    /**
+     * @hidden 
+     */
     Pat as pat,
+    /**
+     * @hidden 
+     */
     Poke as poke,
+    /**
+     * @hidden 
+     */
     Pout as pout,
+    /**
+     * @hidden 
+     */
     Punch as punch,
+    /**
+     * @hidden 
+     */
     Slap as slap,
+    /**
+     * @hidden 
+     */
     Sleep as sleep,
+    /**
+     * @hidden 
+     */
     Smug as smug,
+    /**
+     * @hidden 
+     */
     Tickle as tickle,
+    /**
+     * @hidden 
+     */
     Trap as trap,
+    /**
+     * @hidden 
+     */
     Wallpaper as wallpaper,
+    /**
+     * @hidden 
+     */
     Wallpapers as wallpapers
 }

@@ -1,20 +1,28 @@
 /**
- * This is the result given to the users
+ * This is the result given to the users 
+ * 
+ * @public
  */
 export interface ImageResult {
     /**
-     * URL of the image
+     * URL of the image 
+     * 
+     * @public
      */
     url: string;
     /**
      * Type of the image
-     * values: jpeg | jpg | png | apng | gif
+     * @values jpeg | jpg | png | apng | gif 
+     * 
+     * @public
      */
     type: string;
 }
 
 /**
- * This is the result returned from the server
+ * This is the result returned from the server 
+ * 
+ * @public
  */
 export interface ApiResult {
     /**
@@ -37,6 +45,10 @@ export interface ApiResult {
     fileType: string;
 }
 
+/**
+ * options for getting info
+ * @private
+ */
 export interface ReportInputOptions {
     nsfw ?: boolean;
 }
