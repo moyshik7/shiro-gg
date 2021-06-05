@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "ES2019",
+        "module": "commonjs",
+        "allowJs": true,
+        "checkJs": true,
+        "declaration": true,
+        "outDir": "./comp/",
+        "rootDir": "./src/",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    }
+}
