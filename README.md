@@ -78,28 +78,28 @@ ImageResult {
   
 ### SFW
   
-| Name      | Description                          |
-| :-------- | :----------------------------------- |
-| Avatar    | Get a random avatar                  | 
-| Avatars   | Same as Avatar                       |
-| Blush     | Get a random image / gif of blushing |
-| Cry       | Get a random image / gif of crying   | 
-| Hug       | Get a random image / gif of hugging  |
-| Kiss      | Get a random image / gif of kissing  |
-| Lick      | Get a random image / gif of licking  |
-| Neko      | Get a random image of a catgirl      |
-| Nom       | Get a random image / gif of eating   |
-| Pat       | Get a random image / gif of patting  |
-Poke  
-Pout  
-Punch  
-Slap  
-Sleep  
-Smug  
-Tickle  
-Trap  
-Wallpaper  
-Wallpapers  
+| Name       | Description                          |
+| :--------- | :----------------------------------- |
+| Avatar     | Get a random avatar                  | 
+| Avatars    | Same as Avatar                       |
+| Blush      | Get a random image / gif of blushing |
+| Cry        | Get a random image / gif of crying   | 
+| Hug        | Get a random image / gif of hugging  |
+| Kiss       | Get a random image / gif of kissing  |
+| Lick       | Get a random image / gif of licking  |
+| Neko       | Get a random image of a catgirl      |
+| Nom        | Get a random image / gif of eating   |
+| Pat        | Get a random image / gif of patting  |
+| Poke       | Get a random image / gif of poking   |
+| Pout       | Get a random image / gif of pouting  |
+| Punch      | Get a random image / gif of punching |
+| Slap       | Get a random image / gif of slapping |
+| Sleep      | Get a random image / gif of sleeping |
+| Smug       | Get a random image / gif of smugging |
+| Tickle     | Get a random image / gif of tickling |
+| Trap       | Get a random image of a Trap         |
+| Wallpaper  | Get a random wallpaper               |
+| Wallpapers | Same as wallpaper                    |
   
 ### NSFW
   
