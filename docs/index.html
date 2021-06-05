@@ -1,0 +1,453 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>shiro.gg</title>
+	<meta name="description" content="Documentation for shiro.gg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">shiro.gg</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>shiro.gg</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#shirogg" id="shirogg" style="color: inherit; text-decoration: none;">
+					<h1>Shiro.gg</h1>
+				</a>
+				<p><img src="https://img.shields.io/github/languages/top/moyshik7/shiro.gg" alt="GitHub top language"><br><img src="https://img.shields.io/bundlephobia/min/shiro.gg" alt="npm bundle size"><br><img src="https://img.shields.io/maintenance/yes/2021" alt="Maintenance"><br><img src="https://img.shields.io/snyk/vulnerabilities/github/moyshik7/shiro.gg" alt="Snyk Vulnerabilities for GitHub Repo"><br><img src="https://img.shields.io/github/last-commit/moyshik7/shiro.gg/main" alt="GitHub last commit (branch)"><br><img src="https://img.shields.io/npm/v/shiro.gg" alt="npm">  </p>
+				<p>Unofficial API wrapper for <a href="shiro.gg">https://shiro.gg/api</a>  </p>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h2>Installation</h2>
+				</a>
+				<p><strong>Install with npm:</strong>  </p>
+				<pre><code class="language-bash"><span style="color: #000000">npm i shiro.gg</span>
+</code></pre>
+				<a href="#importing" id="importing" style="color: inherit; text-decoration: none;">
+					<h2>Importing</h2>
+				</a>
+				<p><strong>Import with CommonJS <code>require()</code>:</strong>  </p>
+				<pre><code class="language-js"><span style="color: #008000">// Import the whole module</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">shiro</span><span style="color: #000000"> = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;shiro.gg&quot;</span><span style="color: #000000">);</span>
+<span style="color: #008000">// Or, Just some functions</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">Hug</span><span style="color: #000000"> } = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;shiro.gg&quot;</span><span style="color: #000000">);</span>
+</code></pre>
+				<p><strong>Import with EcmaScript / TypeScript <code>import</code>:</strong>  </p>
+				<pre><code class="language-js"><span style="color: #008000">// Whole Module</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #0000FF">*</span><span style="color: #000000"> </span><span style="color: #AF00DB">as</span><span style="color: #000000"> </span><span style="color: #001080">shiro</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;shiro.gg&#039;</span>
+
+<span style="color: #008000">//Or, Just some functions</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">Hug</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;shiro.gg&#039;</span>
+</code></pre>
+				<a href="#namings" id="namings" style="color: inherit; text-decoration: none;">
+					<h2>Namings</h2>
+				</a>
+				<p>Since version <code>0.1.2</code> both PascalCase (eg. <code>Hug()</code>) and camelCase (eg. <code>hug()</code>) are available.  </p>
+				<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+					<h2>Example</h2>
+				</a>
+				<p><strong>A basic example using await</strong><br><strong>Note: <code>await</code> is only usable in <code>async</code> functions</strong></p>
+				<pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">res</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">Hug</span><span style="color: #000000">()</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">res</span><span style="color: #000000">)</span>
+</code></pre>
+				<p><strong>A basic example using <code>.then()</code>:</strong>  </p>
+				<pre><code class="language-js"><span style="color: #795E26">Hug</span><span style="color: #000000">().</span><span style="color: #795E26">then</span><span style="color: #000000">( (</span><span style="color: #001080">res</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">res</span><span style="color: #000000">)</span>
+<span style="color: #000000">})</span>
+<span style="color: #008000">//Optional</span>
+<span style="color: #000000">.</span><span style="color: #795E26">catch</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">log</span><span style="color: #000000">)</span>
+</code></pre>
+				<a href="#return-type" id="return-type" style="color: inherit; text-decoration: none;">
+					<h3>Return type</h3>
+				</a>
+				<pre><code class="language-ts"><span style="color: #001080">ImageResult</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #008000">// The url of the image</span>
+<span style="color: #000000">    url: </span><span style="color: #001080">string</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #008000">// The type of the image (png | jpg | gif)</span>
+<span style="color: #000000">    type: </span><span style="color: #001080">string</span><span style="color: #000000">;</span>
+<span style="color: #000000">}</span>
+</code></pre>
+				<a href="#functions" id="functions" style="color: inherit; text-decoration: none;">
+					<h2>Functions</h2>
+				</a>
+				<a href="#sfw" id="sfw" style="color: inherit; text-decoration: none;">
+					<h3>SFW</h3>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th align="left">Name</th>
+							<th align="left">Description</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td align="left">Avatar</td>
+							<td align="left">Get a random avatar</td>
+						</tr>
+						<tr>
+							<td align="left">Avatars</td>
+							<td align="left">Same as Avatar</td>
+						</tr>
+						<tr>
+							<td align="left">Blush</td>
+							<td align="left">Get a random image / gif of blushing</td>
+						</tr>
+						<tr>
+							<td align="left">Cry</td>
+							<td align="left">Get a random image / gif of crying</td>
+						</tr>
+						<tr>
+							<td align="left">Hug</td>
+							<td align="left">Get a random image / gif of hugging</td>
+						</tr>
+						<tr>
+							<td align="left">Kiss</td>
+							<td align="left">Get a random image / gif of kissing</td>
+						</tr>
+						<tr>
+							<td align="left">Lick</td>
+							<td align="left">Get a random image / gif of licking</td>
+						</tr>
+						<tr>
+							<td align="left">Neko</td>
+							<td align="left">Get a random image of a catgirl</td>
+						</tr>
+						<tr>
+							<td align="left">Nom</td>
+							<td align="left">Get a random image / gif of eating</td>
+						</tr>
+						<tr>
+							<td align="left">Pat</td>
+							<td align="left">Get a random image / gif of patting</td>
+						</tr>
+						<tr>
+							<td align="left">Poke</td>
+							<td align="left">Get a random image / gif of poking</td>
+						</tr>
+						<tr>
+							<td align="left">Pout</td>
+							<td align="left">Get a random image / gif of pouting</td>
+						</tr>
+						<tr>
+							<td align="left">Punch</td>
+							<td align="left">Get a random image / gif of punching</td>
+						</tr>
+						<tr>
+							<td align="left">Slap</td>
+							<td align="left">Get a random image / gif of slapping</td>
+						</tr>
+						<tr>
+							<td align="left">Sleep</td>
+							<td align="left">Get a random image / gif of sleeping</td>
+						</tr>
+						<tr>
+							<td align="left">Smug</td>
+							<td align="left">Get a random image / gif of smugging</td>
+						</tr>
+						<tr>
+							<td align="left">Tickle</td>
+							<td align="left">Get a random image / gif of tickling</td>
+						</tr>
+						<tr>
+							<td align="left">Trap</td>
+							<td align="left">Get a random image of a Trap</td>
+						</tr>
+						<tr>
+							<td align="left">Wallpaper</td>
+							<td align="left">Get a random wallpaper</td>
+						</tr>
+						<tr>
+							<td align="left">Wallpapers</td>
+							<td align="left">Same as wallpaper</td>
+						</tr>
+						<tr>
+							<td align="left"></td>
+							<td align="left"></td>
+						</tr>
+				</tbody></table>
+				<a href="#nsfw" id="nsfw" style="color: inherit; text-decoration: none;">
+					<h3>NSFW</h3>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th align="left">Name</th>
+							<th align="left">Description</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td align="left">BDSM</td>
+							<td align="left">Get image of BDSM</td>
+						</tr>
+						<tr>
+							<td align="left">Bondage</td>
+							<td align="left">Get a random Bondage (subset of BDSM) image</td>
+						</tr>
+						<tr>
+							<td align="left">Hentai</td>
+							<td align="left">Get a random Hentai image</td>
+						</tr>
+						<tr>
+							<td align="left">Thigh</td>
+							<td align="left">Get a random thigh image</td>
+						</tr>
+						<tr>
+							<td align="left">Thighs</td>
+							<td align="left">Same as thigh</td>
+						</tr>
+						<tr>
+							<td align="left"></td>
+							<td align="left"></td>
+						</tr>
+						<tr>
+							<td align="left"></td>
+							<td align="left"></td>
+						</tr>
+						<tr>
+							<td align="left"></td>
+							<td align="left"></td>
+						</tr>
+				</tbody></table>
+				<a href="#other-info" id="other-info" style="color: inherit; text-decoration: none;">
+					<h3>Other info</h3>
+				</a>
+				<p><a href="https://github.com/moyshik7/shiro.gg">GitHub repo</a><br><a href="https://www.npmjs.com/package/shiro.gg">NPM module</a><br><a href="https://shiro.gg/api">Shiro Api</a>  </p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#avatar" class="tsd-kind-icon">avatar</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#avatars" class="tsd-kind-icon">avatars</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#bdsm" class="tsd-kind-icon">bdsm</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#blush" class="tsd-kind-icon">blush</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#bondage" class="tsd-kind-icon">bondage</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#cry" class="tsd-kind-icon">cry</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#hentai" class="tsd-kind-icon">hentai</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#hug" class="tsd-kind-icon">hug</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#kiss" class="tsd-kind-icon">kiss</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#lick" class="tsd-kind-icon">lick</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#neko" class="tsd-kind-icon">neko</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#nom" class="tsd-kind-icon">nom</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#pat" class="tsd-kind-icon">pat</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#poke" class="tsd-kind-icon">poke</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#pout" class="tsd-kind-icon">pout</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#punch" class="tsd-kind-icon">punch</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#slap" class="tsd-kind-icon">slap</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#sleep" class="tsd-kind-icon">sleep</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#smug" class="tsd-kind-icon">smug</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#thigh" class="tsd-kind-icon">thigh</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#thighs" class="tsd-kind-icon">thighs</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#tickle" class="tsd-kind-icon">tickle</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#trap" class="tsd-kind-icon">trap</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#wallpaper" class="tsd-kind-icon">wallpaper</a>
+					</li>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#wallpapers" class="tsd-kind-icon">wallpapers</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/apiresult.html" class="tsd-kind-icon">Api<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/imageresult.html" class="tsd-kind-icon">Image<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-private">
+						<a href="interfaces/reportinputoptions.html" class="tsd-kind-icon">Report<wbr>Input<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#avatar" class="tsd-kind-icon">Avatar</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#avatars" class="tsd-kind-icon">Avatars</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#bdsm" class="tsd-kind-icon">BDSM</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#blush" class="tsd-kind-icon">Blush</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#bondage" class="tsd-kind-icon">Bondage</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#cry" class="tsd-kind-icon">Cry</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#hentai" class="tsd-kind-icon">Hentai</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#hug" class="tsd-kind-icon">Hug</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#kiss" class="tsd-kind-icon">Kiss</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#lick" class="tsd-kind-icon">Lick</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#neko" class="tsd-kind-icon">Neko</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#nom" class="tsd-kind-icon">Nom</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#pat" class="tsd-kind-icon">Pat</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#poke" class="tsd-kind-icon">Poke</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#pout" class="tsd-kind-icon">Pout</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#punch" class="tsd-kind-icon">Punch</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#slap" class="tsd-kind-icon">Slap</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#sleep" class="tsd-kind-icon">Sleep</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#smug" class="tsd-kind-icon">Smug</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#thigh" class="tsd-kind-icon">Thigh</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#thighs" class="tsd-kind-icon">Thighs</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#tickle" class="tsd-kind-icon">Tickle</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#trap" class="tsd-kind-icon">Trap</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#wallpaper" class="tsd-kind-icon">Wallpaper</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#wallpapers" class="tsd-kind-icon">Wallpapers</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
