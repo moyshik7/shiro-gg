@@ -1,8 +1,9 @@
 {
   "name": "shiro.gg",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "An api wrapper for shiro.gg",
   "main": "./comp/main.js",
+  "types": "./comp/typings.ts",
   "scripts": {
     "start": "tsc && node .",
     "test": "tsc-node ."
