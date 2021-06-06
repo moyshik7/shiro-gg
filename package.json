@@ -5,29 +5,36 @@
     "main": "./comp/main.js",
     "types": "./comp/typings.d.ts",
     "scripts": {
-		"build": "npm ci && tsc",
+        "build": "npm ci && tsc",
         "build-docs": "rm -f -r ./docs && typedoc src/main.ts --out ./docs/",
+        "no-compile": "ts-node .",
         "start": "tsc",
-        "test": "tsc-node ."
+        "test": "mocha -r ts-node/register src/tests/*.test.ts"
     },
     "keywords": [
         "api",
         "shiro",
         "image",
-		"gif",
+        "gif",
         "shiro.gg",
-		"shiro-gg",
+        "shiro-gg",
         "api-wrapper",
         "image-api"
     ],
     "author": "moyshik7",
     "license": "MIT",
     "devDependencies": {
+        "@types/chai": "^4.2.18",
+        "@types/mocha": "^8.2.2",
         "@types/node": "^15.12.1",
         "@typescript-eslint/eslint-plugin": "^4.26.0",
         "@typescript-eslint/parser": "^4.26.0",
+        "chai": "^4.3.4",
+        "chai-match": "^1.1.1",
         "eslint": "^7.28.0",
         "jsdoc-to-markdown": "^7.0.1",
+        "mocha": "^8.4.0",
+        "ts-node": "^10.0.0",
         "typedoc": "^0.20.36",
         "typescript": "^4.3.2"
     },
