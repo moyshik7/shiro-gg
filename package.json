@@ -3,7 +3,7 @@
     "version": "0.1.6",
     "description": "An api wrapper for shiro.gg",
     "main": "./comp/main.js",
-    "types": "./comp/typings.ts",
+    "types": "./comp/typings.d.ts",
     "scripts": {
 		"build": "npm ci && tsc",
         "build-docs": "rm -f -r ./docs && typedoc src/main.ts --out ./docs/",
@@ -14,7 +14,9 @@
         "api",
         "shiro",
         "image",
+		"gif",
         "shiro.gg",
+		"shiro-gg",
         "api-wrapper",
         "image-api"
     ],
