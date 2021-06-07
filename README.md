@@ -117,6 +117,7 @@ ImageResult {
 | Trap       | Get a random image of a Trap         |
 | Wallpaper  | Get a random wallpaper               |
 | Wallpapers | Same as wallpaper                    |
+
   
 ### NSFW
   
@@ -127,6 +128,7 @@ ImageResult {
 | Hentai     | Get a random Hentai image                   |
 | Thigh      | Get a random thigh image                    |
 | Thighs     | Same as thigh                               |
+
   
   
   
