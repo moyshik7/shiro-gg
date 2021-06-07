@@ -13,7 +13,7 @@ printf "\n\n"
 npx typedoc ./src/main.ts --out ./docs/
 
 printf "\n\n\n"
-echo 'shiro.gg.js.org' >> ./docs/CNAME
+echo 'shiro-gg.js.org' >> ./docs/CNAME
 
 printf "Generated Docs"
 printf "Done"
