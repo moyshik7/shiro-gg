@@ -9,6 +9,24 @@
   
 Unofficial API wrapper for [https://shiro.gg/api](shiro.gg)  
   
+## A Quick Example
+
+```js
+const shiro = require('shiro.gg')
+
+// Using promise .then()
+shiro.hug().then(hug => {
+    console.log(hug.url)
+})
+
+// Using async function
+const hug = async () => {
+    let hugData = await shiro.hug()
+    console.log(hug.url)
+}
+hug()
+```
+
 ## Installation
 **Install with npm:**  
 
