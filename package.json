@@ -6,7 +6,7 @@
     "types": "./comp/typings.d.ts",
     "scripts": {
         "build": "npm ci && tsc",
-        "build-docs": "rm -f -r ./docs && typedoc src/main.ts --out ./docs/",
+        "build-docs": "npm ci && bash ./docs.sh",
         "no-compile": "ts-node .",
         "start": "tsc",
         "test": "mocha -r ts-node/register src/tests/*.test.ts"
@@ -36,7 +36,7 @@
         "mocha": "^8.4.0",
         "ts-node": "^10.0.0",
         "typedoc": "^0.20.36",
-        "typescript": "^4.3.2"
+        "typescript": "^4.2.4"
     },
     "dependencies": {
         "axios": "^0.21.1"
