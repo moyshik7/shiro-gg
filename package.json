@@ -43,10 +43,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/moyshik7/shiro.gg.git"
+        "url": "git+https://github.com/moyshik7/shiro-gg.git"
     },
     "bugs": {
-        "url": "https://github.com/moyshik7/shiro.gg/issues"
+        "url": "https://github.com/moyshik7/shiro-gg/issues"
     },
     "homepage": "https://moyshik7.github.io/shiro.gg/"
 }
