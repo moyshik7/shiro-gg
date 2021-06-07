@@ -10,14 +10,14 @@ import { GetImage } from './../resource/res'
  * @returns {Promise} An avatar image 
  * @example
  * ```js 
- * Avatar().then(res => { 
+ * shiro.avatar().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Avatar = async (): Promise<ImageResult> => {
+const avatar = async (): Promise<ImageResult> => {
     return GetImage('avatars', { nsfw: false })
 }
 /**
@@ -26,14 +26,14 @@ const Avatar = async (): Promise<ImageResult> => {
  * @returns {Promise} An avatar image 
  * @example
  * ```js 
- * Avatars().then(res => { 
+ * shiro.avatars().then(res => { 
  *     console.log(res)
  * })
  * ```
  * 
  * @public
  */
-const Avatars = async (): Promise<ImageResult> => {
+const avatars = async (): Promise<ImageResult> => {
     return GetImage('avatars', { nsfw: false })
 }
 /**
@@ -42,14 +42,14 @@ const Avatars = async (): Promise<ImageResult> => {
  * @returns {Promise} A blushing image or gif 
  * @example
  * ```js
- * Blush().then(res => { 
+ * shiro.blush().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Blush = async (): Promise<ImageResult> => {
+const blush = async (): Promise<ImageResult> => {
     return GetImage('blush', { nsfw: false })
 }
 /**
@@ -58,14 +58,14 @@ const Blush = async (): Promise<ImageResult> => {
  * @returns {Promise} A crying gif 
  * @example
  * ```js
- * Cry().then(res => { 
+ * shiro.cry().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Cry = async (): Promise<ImageResult> => {
+const cry = async (): Promise<ImageResult> => {
     return GetImage('cry', { nsfw: false })
 }
 /**
@@ -74,14 +74,14 @@ const Cry = async (): Promise<ImageResult> => {
  * @returns {Promise} A hugging image / gif 
  * @example
  * ```js
- * Hug().then(res => { 
+ * shiro.hug().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Hug = async (): Promise<ImageResult> => {
+const hug = async (): Promise<ImageResult> => {
     return GetImage('hug', { nsfw: false })
 }
 /**
@@ -90,14 +90,14 @@ const Hug = async (): Promise<ImageResult> => {
  * @returns {Promise} A kissing gif 
  * @example
  * ```js
- * Kiss().then(res => { 
+ * shiro.kiss().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Kiss = async (): Promise<ImageResult> => {
+const kiss = async (): Promise<ImageResult> => {
     return GetImage('kiss', { nsfw: false })
 }
 /**
@@ -106,14 +106,14 @@ const Kiss = async (): Promise<ImageResult> => {
  * @returns {Promise} A licking gif 
  * @example
  * ```js
- * Lick().then(res => { 
+ * shiro.lick().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Lick = async (): Promise<ImageResult> => {
+const lick = async (): Promise<ImageResult> => {
     return GetImage('lick', { nsfw: false })
 }
 /**
@@ -122,14 +122,14 @@ const Lick = async (): Promise<ImageResult> => {
  * @returns {Promise} An image of catgirl
  * @example
  * ```js
- * Neko().then(res => { 
+ * shiro.neko().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Neko = async (): Promise<ImageResult> => {
+const neko = async (): Promise<ImageResult> => {
     return GetImage('neko', { nsfw: false })
 }
 /**
@@ -138,14 +138,14 @@ const Neko = async (): Promise<ImageResult> => {
  * @returns {Promise} An eating gif 
  * @example
  * ```js
- * Nom().then(res => { 
+ * shiro.nom().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Nom = async (): Promise<ImageResult> => {
+const nom = async (): Promise<ImageResult> => {
     return GetImage('nom', { nsfw: false })
 }
 /**
@@ -154,14 +154,14 @@ const Nom = async (): Promise<ImageResult> => {
  * @returns {Promise} A patting gif 
  * @example
  * ```js
- * Pat().then(res => { 
+ * shiro.pat().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Pat = async (): Promise<ImageResult> => {
+const pat = async (): Promise<ImageResult> => {
     return GetImage('pat', { nsfw: false })
 }
 /**
@@ -170,14 +170,14 @@ const Pat = async (): Promise<ImageResult> => {
  * @returns {Promise} A poking gif 
  * @example
  * ```js
- * Poke().then(res => { 
+ * shiro.poke().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Poke = async (): Promise<ImageResult> => {
+const poke = async (): Promise<ImageResult> => {
     return GetImage('poke', { nsfw: false })
 }
 /**
@@ -186,14 +186,14 @@ const Poke = async (): Promise<ImageResult> => {
  * @returns {Promise} A pouting gif 
  * @example
  * ```js
- * Pout().then(res => { 
+ * shiro.pout().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Pout = async (): Promise<ImageResult> => {
+const pout = async (): Promise<ImageResult> => {
     return GetImage('pout', { nsfw: false })
 }
 /**
@@ -202,14 +202,14 @@ const Pout = async (): Promise<ImageResult> => {
  * @returns {Promise} A punching gif 
  * @example
  * ```js
- * Punch().then(res => { 
+ * shiro.punch().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Punch = async (): Promise<ImageResult> => {
+const punch = async (): Promise<ImageResult> => {
     return GetImage('punch', { nsfw: false })
 }
 /**
@@ -218,14 +218,14 @@ const Punch = async (): Promise<ImageResult> => {
  * @returns {Promise} A slapping gif 
  * @example
  * ```js
- * Slap().then(res => { 
+ * shiro.slap().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Slap = async (): Promise<ImageResult> => {
+const slap = async (): Promise<ImageResult> => {
     return GetImage('slap', { nsfw: false })
 }
 /**
@@ -234,14 +234,14 @@ const Slap = async (): Promise<ImageResult> => {
  * @returns {Promise} A sleeping gif
  * @example
  * ```js
- * Sleep().then(res => { 
+ * shiro.sleep().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Sleep = async (): Promise<ImageResult> => {
+const sleep = async (): Promise<ImageResult> => {
     return GetImage('sleep', { nsfw: false })
 }
 /**
@@ -250,14 +250,14 @@ const Sleep = async (): Promise<ImageResult> => {
  * @returns {Promise} A smug image 
  * @example
  * ```js
- * Smug().then(res => { 
+ * shiro.smug().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Smug = async (): Promise<ImageResult> => {
+const smug = async (): Promise<ImageResult> => {
     return GetImage('smug', { nsfw: false })
 }
 /**
@@ -266,14 +266,14 @@ const Smug = async (): Promise<ImageResult> => {
  * @returns {Promise} A tickling gif 
  * @example
  * ```js
- * Tickle().then(res => { 
+ * shiro.tickle().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Tickle = async (): Promise<ImageResult> => {
+const tickle = async (): Promise<ImageResult> => {
     return GetImage('tickle', { nsfw: false })
 }
 /**
@@ -282,14 +282,14 @@ const Tickle = async (): Promise<ImageResult> => {
  * @returns {Promise} An image of a trap
  * @example
  * ```js
- * Trap().then(res => { 
+ * shiro.trap().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Trap = async (): Promise<ImageResult> => {
+const trap = async (): Promise<ImageResult> => {
     return GetImage('trap', { nsfw: false })
 }
 /**
@@ -298,14 +298,14 @@ const Trap = async (): Promise<ImageResult> => {
  * @returns {Promise} A wallpaper
  * @example
  * ```js
- * Wallpaper().then(res => { 
+ * shiro.wallpaper().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Wallpaper = async (): Promise<ImageResult> => {
+const wallpaper = async (): Promise<ImageResult> => {
     return GetImage('wallpapers', { nsfw: false })
 }
 /**
@@ -314,38 +314,38 @@ const Wallpaper = async (): Promise<ImageResult> => {
  * @returns {Promise} A wallpaper
  * @example
  * ```js
- * Wallpapers().then(res => { 
+ * shiro.wallpapers().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Wallpapers = async (): Promise<ImageResult> => {
+const wallpapers = async (): Promise<ImageResult> => {
     return GetImage('wallpapers', { nsfw: false })
 }
 
 
 // Exporting all modules
 export {
-    Avatar,
-    Avatars,
-    Blush,
-    Cry,
-    Hug,
-    Kiss,
-    Lick,
-    Neko,
-    Nom,
-    Pat,
-    Poke,
-    Pout,
-    Punch,
-    Slap,
-    Sleep,
-    Smug,
-    Tickle,
-    Trap,
-    Wallpaper,
-    Wallpapers
+    avatar,
+    avatars,
+    blush,
+    cry,
+    hug,
+    kiss,
+    lick,
+    neko,
+    nom,
+    pat,
+    poke,
+    pout,
+    punch,
+    slap,
+    sleep,
+    smug,
+    tickle,
+    trap,
+    wallpaper,
+    wallpapers
 }
