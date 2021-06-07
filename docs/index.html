@@ -63,6 +63,23 @@
 				</a>
 				<p><img src="https://img.shields.io/github/languages/top/moyshik7/shiro.gg" alt="GitHub top language"><br><img src="https://img.shields.io/bundlephobia/min/shiro.gg" alt="npm bundle size"><br><img src="https://img.shields.io/maintenance/yes/2021" alt="Maintenance"><br><img src="https://img.shields.io/snyk/vulnerabilities/github/moyshik7/shiro.gg" alt="Snyk Vulnerabilities for GitHub Repo"><br><img src="https://img.shields.io/github/last-commit/moyshik7/shiro.gg/main" alt="GitHub last commit (branch)"><br><img src="https://img.shields.io/npm/v/shiro.gg" alt="npm">  </p>
 				<p>Unofficial API wrapper for <a href="shiro.gg">https://shiro.gg/api</a>  </p>
+				<a href="#a-quick-example" id="a-quick-example" style="color: inherit; text-decoration: none;">
+					<h2>A Quick Example</h2>
+				</a>
+				<pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">shiro</span><span style="color: #000000"> = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;shiro.gg&#039;</span><span style="color: #000000">)</span>
+
+<span style="color: #008000">// Using promise .then()</span>
+<span style="color: #001080">shiro</span><span style="color: #000000">.</span><span style="color: #795E26">hug</span><span style="color: #000000">().</span><span style="color: #795E26">then</span><span style="color: #000000">(</span><span style="color: #001080">hug</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">hug</span><span style="color: #000000">.</span><span style="color: #001080">url</span><span style="color: #000000">)</span>
+<span style="color: #000000">})</span>
+
+<span style="color: #008000">// Using async function</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #795E26">hug</span><span style="color: #000000"> = </span><span style="color: #0000FF">async</span><span style="color: #000000"> () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">hugData</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">shiro</span><span style="color: #000000">.</span><span style="color: #795E26">hug</span><span style="color: #000000">()</span>
+<span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">hug</span><span style="color: #000000">.</span><span style="color: #001080">url</span><span style="color: #000000">)</span>
+<span style="color: #000000">}</span>
+<span style="color: #795E26">hug</span><span style="color: #000000">()</span>
+</code></pre>
 				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
 					<h2>Installation</h2>
 				</a>
@@ -270,21 +287,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-reference">
-						<a href="modules.html#bdsm" class="tsd-kind-icon">bdsm</a>
-					</li>
-					<li class=" tsd-kind-reference">
-						<a href="modules.html#bondage" class="tsd-kind-icon">bondage</a>
-					</li>
-					<li class=" tsd-kind-reference">
-						<a href="modules.html#hentai" class="tsd-kind-icon">hentai</a>
-					</li>
-					<li class=" tsd-kind-reference">
-						<a href="modules.html#thigh" class="tsd-kind-icon">thigh</a>
-					</li>
-					<li class=" tsd-kind-reference">
-						<a href="modules.html#thighs" class="tsd-kind-icon">thighs</a>
-					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/apiresult.html" class="tsd-kind-icon">Api<wbr>Result</a>
 					</li>
@@ -368,6 +370,81 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#wallpapers" class="tsd-kind-icon">Wallpapers</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#avatar" class="tsd-kind-icon">avatar</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#avatars" class="tsd-kind-icon">avatars</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#bdsm" class="tsd-kind-icon">bdsm</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#blush" class="tsd-kind-icon">blush</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#bondage" class="tsd-kind-icon">bondage</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#cry" class="tsd-kind-icon">cry</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#hentai" class="tsd-kind-icon">hentai</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#hug" class="tsd-kind-icon">hug</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#kiss" class="tsd-kind-icon">kiss</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#lick" class="tsd-kind-icon">lick</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#neko" class="tsd-kind-icon">neko</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#nom" class="tsd-kind-icon">nom</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#pat" class="tsd-kind-icon">pat</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#poke" class="tsd-kind-icon">poke</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#pout" class="tsd-kind-icon">pout</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#punch" class="tsd-kind-icon">punch</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#slap" class="tsd-kind-icon">slap</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#sleep" class="tsd-kind-icon">sleep</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#smug" class="tsd-kind-icon">smug</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#thigh" class="tsd-kind-icon">thigh</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#thighs" class="tsd-kind-icon">thighs</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#tickle" class="tsd-kind-icon">tickle</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#trap" class="tsd-kind-icon">trap</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#wallpaper" class="tsd-kind-icon">wallpaper</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#wallpapers" class="tsd-kind-icon">wallpapers</a>
 					</li>
 				</ul>
 			</nav>
