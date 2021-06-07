@@ -1,3 +1,6 @@
 comp/
 node_modules/
+docs/
+*.test.ts
+*.test.js
 
