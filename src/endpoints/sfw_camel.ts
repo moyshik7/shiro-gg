@@ -53,7 +53,7 @@ const blush = async (): Promise<ImageResult> => {
     return GetImage('blush', { nsfw: false })
 }
 /**
- * get an image / gif of crying
+ * Get an image / gif of crying
  * 
  * @returns {Promise} A crying gif 
  * @example

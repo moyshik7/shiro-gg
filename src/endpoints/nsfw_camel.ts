@@ -11,14 +11,14 @@ import { GetImage } from './../resource/res'
  * @returns {Promise} A bdsm image or gif 
  * @example
  * ```js
- * shiro.BDSM().then(res => { 
+ * shiro.bdsm().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const BDSM = async (): Promise<ImageResult> => {
+const bdsm = async (): Promise<ImageResult> => {
     return GetImage('bondage', { nsfw: true })
 }
 /**
@@ -27,14 +27,14 @@ const BDSM = async (): Promise<ImageResult> => {
  * @returns {Promise} A bondage image or gif 
  * @example
  * ```js
- * shiro.Bondage().then(res => { 
+ * shiro.bondage().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Bondage = async (): Promise<ImageResult> => {
+const bondage = async (): Promise<ImageResult> => {
     return GetImage('bondage', { nsfw: true })
 }
 /**
@@ -43,14 +43,14 @@ const Bondage = async (): Promise<ImageResult> => {
  * @returns {Promise} A hentai image or gif 
  * @example
  * ```js
- * shiro.Hentai().then(res => { 
+ * shiro.hentai().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Hentai = async (): Promise<ImageResult> => {
+const hentai = async (): Promise<ImageResult> => {
     return GetImage('hentai', { nsfw: true })
 }
 /**
@@ -60,14 +60,14 @@ const Hentai = async (): Promise<ImageResult> => {
  * @returns {Promise} A thigh image or gif 
  * @example
  * ```js
- * shiro.Thigh().then(res => { 
+ * shiro.thigh().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Thigh = async (): Promise<ImageResult> => {
+const thigh = async (): Promise<ImageResult> => {
     return GetImage('thigh', { nsfw: true })
 }
 /**
@@ -77,22 +77,22 @@ const Thigh = async (): Promise<ImageResult> => {
  * @returns {Promise} A thigh image or gif 
  * @example
  * ```js
- * shiro.Thighs().then(res => { 
+ * shiro.thighs().then(res => { 
  *     console.log(res) 
  * })
  * ```
  *
  * @public
  */
-const Thighs = async (): Promise<ImageResult> => {
+const thighs = async (): Promise<ImageResult> => {
     return GetImage('thighs', { nsfw: true })
 }
 
 // Export all Modules
 export {
-    BDSM,
-    Bondage,
-    Hentai,
-    Thigh,
-    Thighs
+    bdsm,
+    bondage,
+    hentai,
+    thigh,
+    thighs
 }
