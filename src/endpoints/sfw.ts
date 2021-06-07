@@ -10,7 +10,7 @@ import { GetImage } from './../resource/res'
  * @returns {Promise} An avatar image 
  * @example
  * ```js 
- * Avatar().then(res => { 
+ * shiro.Avatar().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -26,7 +26,7 @@ const Avatar = async (): Promise<ImageResult> => {
  * @returns {Promise} An avatar image 
  * @example
  * ```js 
- * Avatars().then(res => { 
+ * shiro.Avatars().then(res => { 
  *     console.log(res)
  * })
  * ```
@@ -42,7 +42,7 @@ const Avatars = async (): Promise<ImageResult> => {
  * @returns {Promise} A blushing image or gif 
  * @example
  * ```js
- * Blush().then(res => { 
+ * shiro.Blush().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -58,7 +58,7 @@ const Blush = async (): Promise<ImageResult> => {
  * @returns {Promise} A crying gif 
  * @example
  * ```js
- * Cry().then(res => { 
+ * shiro.Cry().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -74,7 +74,7 @@ const Cry = async (): Promise<ImageResult> => {
  * @returns {Promise} A hugging image / gif 
  * @example
  * ```js
- * Hug().then(res => { 
+ * shiro.Hug().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -90,7 +90,7 @@ const Hug = async (): Promise<ImageResult> => {
  * @returns {Promise} A kissing gif 
  * @example
  * ```js
- * Kiss().then(res => { 
+ * shiro.Kiss().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -106,7 +106,7 @@ const Kiss = async (): Promise<ImageResult> => {
  * @returns {Promise} A licking gif 
  * @example
  * ```js
- * Lick().then(res => { 
+ * shiro.Lick().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -122,7 +122,7 @@ const Lick = async (): Promise<ImageResult> => {
  * @returns {Promise} An image of catgirl
  * @example
  * ```js
- * Neko().then(res => { 
+ * shiro.Neko().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -138,7 +138,7 @@ const Neko = async (): Promise<ImageResult> => {
  * @returns {Promise} An eating gif 
  * @example
  * ```js
- * Nom().then(res => { 
+ * shiro.Nom().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -154,7 +154,7 @@ const Nom = async (): Promise<ImageResult> => {
  * @returns {Promise} A patting gif 
  * @example
  * ```js
- * Pat().then(res => { 
+ * shiro.Pat().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -170,7 +170,7 @@ const Pat = async (): Promise<ImageResult> => {
  * @returns {Promise} A poking gif 
  * @example
  * ```js
- * Poke().then(res => { 
+ * shiro.Poke().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -186,7 +186,7 @@ const Poke = async (): Promise<ImageResult> => {
  * @returns {Promise} A pouting gif 
  * @example
  * ```js
- * Pout().then(res => { 
+ * shiro.Pout().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -202,7 +202,7 @@ const Pout = async (): Promise<ImageResult> => {
  * @returns {Promise} A punching gif 
  * @example
  * ```js
- * Punch().then(res => { 
+ * shiro.Punch().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -218,7 +218,7 @@ const Punch = async (): Promise<ImageResult> => {
  * @returns {Promise} A slapping gif 
  * @example
  * ```js
- * Slap().then(res => { 
+ * shiro.Slap().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -234,7 +234,7 @@ const Slap = async (): Promise<ImageResult> => {
  * @returns {Promise} A sleeping gif
  * @example
  * ```js
- * Sleep().then(res => { 
+ * shiro.Sleep().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -250,7 +250,7 @@ const Sleep = async (): Promise<ImageResult> => {
  * @returns {Promise} A smug image 
  * @example
  * ```js
- * Smug().then(res => { 
+ * shiro.Smug().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -266,7 +266,7 @@ const Smug = async (): Promise<ImageResult> => {
  * @returns {Promise} A tickling gif 
  * @example
  * ```js
- * Tickle().then(res => { 
+ * shiro.Tickle().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -282,7 +282,7 @@ const Tickle = async (): Promise<ImageResult> => {
  * @returns {Promise} An image of a trap
  * @example
  * ```js
- * Trap().then(res => { 
+ * shiro.Trap().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -298,7 +298,7 @@ const Trap = async (): Promise<ImageResult> => {
  * @returns {Promise} A wallpaper
  * @example
  * ```js
- * Wallpaper().then(res => { 
+ * shiro.Wallpaper().then(res => { 
  *     console.log(res) 
  * })
  * ```
@@ -314,7 +314,7 @@ const Wallpaper = async (): Promise<ImageResult> => {
  * @returns {Promise} A wallpaper
  * @example
  * ```js
- * Wallpapers().then(res => { 
+ * shiro.Wallpapers().then(res => { 
  *     console.log(res) 
  * })
  * ```

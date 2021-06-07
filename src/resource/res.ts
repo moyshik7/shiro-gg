@@ -9,7 +9,21 @@ import axios from 'axios'
 const BaseURL = 'https://shiro.gg/api/'
 
 /**
- * gets image from the api
+ * gets image from the api 
+ * @parameter {__endpoint} string: The endpoint of the api
+ * 
+ * @example   
+ * SFW  
+ * ```js
+ * GetImage('pat').then(console.log) 
+ * //Or, 
+ * GetImage('pat', { nsfw: false }).then(console.log) 
+ * ``` 
+ * NSFW  
+ * ```js
+ * GetImage('hentai', { nsfw: true }).then(console.log) 
+ * ``` 
+ * 
  * @private
  */
 const GetImage = async (__endpoint: string, __options?: ReportInputOptions): Promise < ImageResult > => {
@@ -21,9 +35,7 @@ const GetImage = async (__endpoint: string, __options?: ReportInputOptions): Pro
             reject(__argErr)
         }
         if(!__options){
-            /**
-             * If no options is provided we'll think it's sfw request
-             */
+            // If no options is provided we'll think it's sfw request
             __options = {
                 nsfw: false
             }
@@ -40,9 +52,7 @@ const GetImage = async (__endpoint: string, __options?: ReportInputOptions): Pro
          * NSFW: https://shiro.gg/api/images/nsfw/:endpoint
          */
         axios.get(_requestURL).then((_res: AxiosResponse<ApiResult>): void => {
-            /**
-             * If okay / success
-             */
+            // If okay / success
             if (_res.data.code == 200) {
                 const result: ImageResult = {
                     url: _res.data.url,
@@ -57,10 +67,3 @@ const GetImage = async (__endpoint: string, __options?: ReportInputOptions): Pro
 }
 
 export { GetImage }
-/**
- * Test:
- * SFW:
- * GetImage('pat').then(console.log)
- * NSFW:
- * GetImage('hentai', { nsfw: true }).then(console.log)
- */
