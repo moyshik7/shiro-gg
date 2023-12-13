@@ -6,7 +6,7 @@ import { ApiResult, ImageResult, ReportInputOptions } from './../typings'
 import axios from 'axios'
 
 //The base url
-const BaseURL = 'https://shiro.gg/api/'
+const BaseURL = 'https://api.dbot.dev/'
 
 /**
  * gets image from the api 

@@ -8,20 +8,18 @@ const expect = chai.expect
 describe('Avatar test', () => {
     it('should return an avatar link as ImageObject', async () => {
         const data = await Avatar()
-        return expect(data.url).to.match(/^(http|https)\:\/\/shiro\.gg\/images\/avatars\//)
+        return expect(data.url).to.match(/^(http|https)\:\/\/cdn\.dbot\.dev\/images\/avatars\//)
     })
 })
 describe('Avatars test', () => {
     it('should return an avatar link as ImageObject', async () => {
         const data = await Avatars()
-        return expect(data.url).to.match(/^(http|https)\:\/\/shiro\.gg\/images\/avatars\//)
+        return expect(data.url).to.match(/^(http|https)\:\/\/cdn\.dbot\.dev\/images\/avatars\//)
     })
 })
 describe('Blush test', () => {
     it('should return an blushing image link as ImageObject', async () => {
         const data = await Blush()
-        return expect(data.url).to.match(/^(http|https)\:\/\/shiro\.gg\/images\/blush\//)
+        return expect(data.url).to.match(/^(http|https)\:\/\/cdn\.dbot\.dev\/images\/blush\//)
     })
 })
-
-
