@@ -2,12 +2,11 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/moyshik7/shiro.gg)  
 ![npm bundle size](https://img.shields.io/bundlephobia/min/shiro.gg)  
 ![Maintenance](https://img.shields.io/maintenance/yes/2023)  
-![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/moyshik7/shiro.gg)  
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/moyshik7/shiro.gg/main)  
-![npm](https://img.shields.io/npm/v/shiro.gg)  
+
   
   
-Unofficial API wrapper for [https://api.dbot.dev/](api.dbot.dev) ~~Formerly shiro.gg~~  
+Unofficial API wrapper for [api.dbot.dev/](https://api.dbot.dev) ~~Formerly shiro.gg~~  
   
 ## A Quick Example
 
@@ -136,4 +135,4 @@ ImageResult {
   
 [GitHub repo](https://github.com/moyshik7/shiro.gg)  
 [NPM module](https://www.npmjs.com/package/shiro.gg)  
-[Shiro Api](https://shiro.gg/api)  
+[Shiro Api](https://api.dbot.dev)  
